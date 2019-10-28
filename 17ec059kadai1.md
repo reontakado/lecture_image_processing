@@ -6,6 +6,7 @@ imagesc(ORG); axis image; % 画像の表示
 ![原画像](https://github.com/reontakado/kadai1.m/blob/master/1.PNG)
 
 図1 原画像
+
 原画像を1/2サンプリングするには，画像を1/2倍に縮小した後，2倍に拡大すればよい．なお，拡大する際には，単純補間するために「box」オプションを設定する．
 IMG = imresize(ORG,0.5); % 画像の縮小
 IMG2 = imresize(IMG,2,'box'); % 画像の拡大
